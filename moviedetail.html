@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Detail</title>
+
+    <!-- logo -->
+    <link rel="icon" href="image/index/logo.svg" />
+
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+
+    <!-- icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+
+    <link rel="stylesheet" href="globalStyle.css" />
+    <link rel="stylesheet" href="styles/moviedetail.css" />
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav id="navbar" class="navbar navbar-expand-lg bg-body-dark sticky-top">
+      <div class="container-fluid menu container">
+        <a href="index.html">
+          <img
+            src="image/index/logo.svg"
+            class="navbar-brand"
+            width="85"
+            alt=""
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="text"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span
+            class="navbar-toggler-icon bg-secondary"
+           
+          ></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navbarNavDropdown"
+        >
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Beranda</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gallery.html">Serial</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="movies.html">Film</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="aboutUs.html">Baru & Populer</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="aboutUs.html">Tahun</a>
+            </li>
+          </ul>
+        </div>
+        <!-- Search Bar and Avatar -->
+        <div class="d-flex">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <img
+                  src="image/index/Vector.svg"
+                  width="25"
+                  alt="Avatar"
+                  class="navbar-avatar"
+                />
+              </a>
+              <ul
+                class="dropdown-menu dropdown-menu-end"
+                aria-labelledby="navbarDropdown"
+                style="background-color: black"
+              >
+                <li><a class="dropdown-item">Hendra Nugroho</a></li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li><a class="dropdown-item" href="#">Profil</a></li>
+                <li><a class="dropdown-item" href="#">Setelan</a></li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li><a class="dropdown-item" href="guest.html">Keluar</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- end navbar -->
+
+    <!-- preview -->
+    <div class="container">
+      <div class="preview1 mt-3">
+        <div class="d-flex justify-content-center">
+          <iframe
+            width="1250"
+            height="703.13"
+            src="https://www.youtube.com/embed/rNtu-bCGi18"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+
+        <div class="text-center text-light text-pre mt-2">
+          <h1>The King's Choice</h1>
+          <h3>Cuplikan untuk The King's Choice</h3>
+        </div>
+
+        <div class="icon mt-3" style="margin-bottom: 70px">
+          <i class="bx bx-plus bx-md"></i>
+          <h3 class="text-light">Tambah ke daftar</h3>
+        </div>
+      </div>
+    </div>
+    <!-- end preview -->
+
+    <!-- series -->
+    <div
+      class="series"
+      style="background-color: #222222; padding-top: 50px; padding-bottom: 50px"
+    >
+      <!-- start about series -->
+      <h1 id="toggleButton" class="text-light text-center">
+        Tentang Film Ini <i class="bx bx-chevron-down"></i>
+      </h1>
+      <div id="content" class="hidden">
+        <p class="text-light text-center">
+          Ini adalah konten tambahan yang akan ditampilkan saat tombol diklik.
+        </p>
+      </div>
+      <!-- end -->
+
+      <!-- end -->
+
+      <!-- end -->
+
+      <!-- src gambar: imdb.com -->
+      <!-- card episode -->
+      <div class="epsode mt-5 container px-4">
+        <div class="row">
+          <div class="col-md-6 img-card mb-3">
+            <img
+              src="image/index/ustrailer.png"
+              class="mx-auto d-block"
+              alt="..."
+            />
+          </div>
+          <div class="col-md-6 text-card">
+            <h3 class="text-light fw-bolder">2017</h3>
+            <h3 class="text-light">Tonton trailer The King's Choice (AS)</h3>
+            <div class="preview">
+              <div class="btn-play mt-3" style="background-color: #dc3545">
+                <a href="#">
+                  <i class="bx bx-play bx-sm" style="color: #f5ecec"></i>
+                </a>
+              </div>
+              <div class="text-view mt-4">
+                <a href="#">
+                  <h4>Lihat Cuplikan</h4>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- end  -->
+    </div>
+
+    <!-- slider -->
+    <div
+      class="raw"
+      style="
+        padding-top: 50px;
+        padding-bottom: 50px;
+        background-color: #222222 !important;
+      "
+    >
+      <div class="header" style="background-color: #222222 !important">
+        <h3 class="title text-light">Semua Film</h3>
+        <div class="progress-bar"></div>
+      </div>
+      <div class="cont">
+        <button class="handle left-handle">
+          <div class="text">&#8249;</div>
+        </button>
+        <div class="slider" style="height: 170px">
+          <!-- sumber:https://wallpapercave.com/wp/wp3849191.jpg -->
+          <img src="image/index/schindler.png" />
+          <!-- sumber:https://nfistorageprod.blob.core.windows.net/files/Movie/a31c5537-431e-4c64-b14e-e6cc4f4aff1c.jpg -->
+          <img src="image/index/narvik.png" />
+          <!-- sumber:https://cms.disway.id/uploads/7f250336e102a9fafeafbf9dd0ff6d7a.jpeg -->
+          <img src="image/index/buyahamka.png" alt="">
+          <!-- sumber:https://w0.peakpx.com/wallpaper/507/704/HD-wallpaper-movie-dunkirk.jpg -->
+          <img src="image/index/dunkirk.png" />
+          <!-- sumber:https://images-na.ssl-images-amazon.com/images/S/pv-target-images/fb5434610f64025d6f1631dc10e2a8cae9dde5920a744526d6a29cfc08d1f653._UY500_UX667_RI_TTW_.jpg -->
+          <img src="image/index/ryan.png" />
+          <!-- sumber:https://keithandthemovies.files.wordpress.com/2016/02/pianist-poster.jpg -->
+          <img src="image/index/pianist.png" />
+          <!-- sumber:https://i.ytimg.com/vi/dCw_mAPoxgw/maxresdefault.jpg -->
+          <img src="image/index/degaulle.png" />
+          <!-- sumber:https://4.bp.blogspot.com/-TIiRIaa3r2M/WkVyrHttwcI/AAAAAAAACVM/T2RyosMfGKYa3OXgwLgrSqBUsY_3MJlVgCLcBGAs/s640/DarkestHour1.png -->
+          <img src="image/index/darkest.png" />
+          <!-- sumber:https://www.tallengestore.com/cdn/shop/products/Midway_2019_-_Hollywood_War_WW2_Original_Movie_Poster_8bef7dda-b389-4c30-a10e-0387a64be848.jpg?v=1582782935 -->
+          <img src="image/index/midwayposter.png" />
+          <!-- sumber:https://www.koimoi.com/wp-content/new-galleries/2022/07/oppenheimer-first-poster-highlights-devastation-caused-by-atomic-bomb-0001.jpg -->
+          <img src="image/index/oppnhemir.png" />
+          <!-- sumber:https://i.ytimg.com/vi/jRMY2Bynph0/maxresdefault.jpg -->
+          <img src="image/index/valkyrie.png" />
+          <!-- sumber:https://flxt.tmsimg.com/assets/p8633509_v_h10_ab.jpg -->
+          <img src="image/index/oba.png" />
+        </div>
+        <button class="handle right-handle">
+          <div class="text">&#8250;</div>
+        </button>
+      </div>
+    </div>
+    <!-- end -->
+
+    <!-- Footer -->
+    <footer class="text-center text-white" style="background-color: #19171d">
+      <!-- Grid container -->
+      <div class="container p-4" style="background-color: #19171d">
+        <!-- Section: Text -->
+        <section class="mb-4">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
+            distinctio earum repellat quaerat voluptatibus placeat nam, commodi
+            optio pariatur est quia magnam eum harum corrupti dicta, aliquam
+            sequi voluptate quas.
+          </p>
+        </section>
+        <!-- Section: Text -->
+
+        <!-- Section: Links -->
+        <section class="footerlink">
+          <ul class="d-flex justify-content-evenly" style="list-style: none">
+            <li><a href="" class="text-light">Ketentuan Penggunaan</a></li>
+            <li><a href="" class="text-light">FAQ</a></li>
+            <li><a href="" class="text-light">Kebijakan Privasi</a></li>
+            <li><a href="" class="text-light">Hubungi Kami</a></li>
+          </ul>
+        </section>
+        <!-- Section: Links -->
+
+        <!-- Section: Social media -->
+        <section class="mt-4">
+          <!-- Facebook -->
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="#!"
+            role="button"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+
+          <!-- Twitter -->
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="#!"
+            role="button"
+            ><i class="fab fa-twitter"></i
+          ></a>
+
+          <!-- Instagram -->
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="#!"
+            role="button"
+            ><i class="fab fa-instagram"></i
+          ></a>
+
+          <!-- Youtube -->
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="#!"
+            role="button"
+            ><i class="fab fa-youtube"></i
+          ></a>
+        </section>
+        <!-- Section: Social media -->
+      </div>
+      <!-- Grid container -->
+
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        © 2023 Copyright:
+        <a class="text-white" href="#">Streamify.com</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+
+    <!-- icon -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+
+    <a href="#top" class="back-to-top" title="Back to Top">
+      <ion-icon name="chevron-up-outline"></ion-icon>
+    </a>
+
+    <!-- end icon -->
+
+    <!-- main js -->
+    <script src="main.js"></script>
+
+    <!-- MDB -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.1/mdb.min.js"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- js logics -->
+    <script>
+      // button show
+      const toggleButton = document.getElementById("toggleButton");
+      const content = document.getElementById("content");
+
+      let isContentVisible = false;
+
+      toggleButton.addEventListener("click", () => {
+        if (!isContentVisible) {
+          content.style.display = "block";
+          isContentVisible = true;
+          toggleButton.innerHTML =
+            'Tentang Film Ini <i class="bx bx-chevron-up"></i>';
+        } else {
+          content.style.display = "none";
+          isContentVisible = false;
+          toggleButton.innerHTML =
+            'Tentang Film Ini <i class="bx bx-chevron-down"></i>';
+        }
+      });
+
+     
+    </script>
+  </body>
+</html>

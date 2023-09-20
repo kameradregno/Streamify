@@ -1,0 +1,318 @@
+/* Initially, set the opacity of .navbar_luar to 1 */
+.navbar_luar {
+    background-color: black;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    opacity: 1;
+    transition: background-color 0.3s ease, opacity 0.3s ease; /* Add transition for background-color and opacity */
+    z-index: 100;
+  }
+  
+  /* When it becomes sticky, set the background-color of .navbar_luar to transparent */
+  .navbar_luar.sticky {
+    background-color: transparent;
+  }
+  
+  .navbar_dalam.sticky {
+    background-color: black;
+  }
+  
+  /* Other styles for .navbar_dalam and .ul_napbar */
+  .navbar_dalam {
+    position: sticky;
+    background-color: black;
+    width: fit-content;
+    height: fit-content;
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    z-index: 200; /* Make sure this is higher than .navbar_luar */
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 2px rgba(0, 5, 13, 0.5);
+    transition: background-color 0.3s ease; /* Add a transition for background-color */
+  }
+  
+  .ul_napbar {
+    margin: 0 20px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    list-style: none;
+    align-items: center;
+    background: #00050d;
+    display: flex;
+    justify-content: space-between; /* Align items to the left and right */
+    position: sticky;
+    transition: box-shadow 0.3s cubic-bezier(0.2, 0.45, 0, 1);
+    z-index: 190;
+  }
+  
+  .Streamify {
+    display: flex;
+    justify-content: center;
+    margin-right: 3rem;
+  }
+
+  .footerlink ul li a:hover {
+    color: #dc3545 !important;
+    transition: var(--transition);
+}
+
+  .ul_napbar li {
+    display: flex;
+    align-items: center;
+  }
+  
+  .right-items {
+    display: flex;
+    align-items: center;
+  }
+  
+  .right-items select {
+    margin-right: 10px;
+    margin-left: 50px; /* Add spacing between select and image */
+  }
+  
+  .img_user {
+    margin: 10px;
+  }
+  
+  .img_user img {
+    height: 30px;
+  }
+  
+  /* Style for the dropdown container */
+.dropdown-container {
+  position: relative;
+  display: inline-block;
+}
+
+/* Style for the button */
+.dropdown-btn {
+  background-color: transparent;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+/* Style for the icon */
+.bx-chevron-down {
+  font-size: 16px;
+  color: white;
+  margin-left: 10px;
+  transform: translateY(2px);
+  transition: transform 0.3s;
+}
+
+/* Style for the dropdown content (initial state) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: black;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 5px;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+/* Style for the dropdown links */
+.dropdown-content a {
+  display: block;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: white;
+  transition: background-color 0.3s;
+}
+
+/* Hover effect for the dropdown button and icon */
+.dropdown-container:hover .dropdown-btn {
+  background-color: #555;
+}
+
+.dropdown-container:hover .bx-chevron-down {
+  transform: translateY(2px) rotate(180deg);
+}
+
+/* Hover effect for the dropdown container */
+.dropdown-container:hover .dropdown-content {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.3s, transform 0.3s, display 0.3s;
+}
+
+/* Hover effect for the dropdown links */
+.dropdown-content a:hover {
+  background-color: #dc3545;
+}
+
+
+.bg-image {
+  background-image: url('../image/index/bg-img.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 90vh;
+  /* Additional styling (optional) */
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  /* Add other styles as needed */
+}
+
+.text {
+  align-self: center;
+}
+
+/* Style the button container */
+.dv-button-wrapper {
+  display: flex;
+  width: 16rem;
+  
+  flex-direction: column;
+}
+
+/* Style the copy button */
+.dv-button {
+  text-align: center;
+  margin: 5px;
+}
+
+.dv-copy-button {
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+  padding: 10px 20px;
+  background-color: #dc3545;
+  color: #fff;
+  border-radius: 5px;
+  width: 15rem;
+}
+
+.dv-copy-button:hover .dv-overlay {
+  display: block;
+}
+
+/* Style the overlay on hover */
+.dv-overlay {
+  background: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 5px;
+  display: none;
+}
+
+/* Style the divider line */
+.dv-divider {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.divider-line {
+  flex-grow: 1;
+  border: 1px solid white;
+}
+
+.dv-divider-text {
+  padding: 0 10px;
+  font-size: 25px;
+  color: #888;
+}
+
+.conter {
+  margin-left: 3rem;
+  margin-top: 5rem;
+}
+
+.marketing {
+  text-align: center;
+}
+
+.col-lg-4 {
+  margin-bottom: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .conter {
+    margin-left: 1rem;
+    margin-top: 4rem;
+  }
+}
+
+@media (max-width: 500px) {
+
+  .dropdown-btn {
+    padding: 0;
+  }
+
+  .conter {
+    margin: auto;
+  }
+
+  .row>* {
+    width: fit-content !important;
+  }
+
+  .rowr {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
+@media (max-width: 400px) {
+  .dropdown-btn {
+    font-size: 12px;
+  }
+
+  .Streamify img{
+    width: 80px !important;
+  }
+
+  .img_user img {
+    width: 25px !important;
+    height: 25px;
+  }
+}
+
+@media (max-width:375px) {
+  .Streamify img {
+    width: 70px !important;
+  }
+
+  .Streamify {
+    margin-right: 2rem;
+  }
+
+  .dropdown-btn {
+    font-size: 10px;
+  }
+
+  .img_user img {
+    width: 23px !important;
+    height: 23px;
+  }
+}
+
+.movie {
+  display: block;
+  margin: auto;
+}
+
+.text-desc {
+  align-self: center;
+}
